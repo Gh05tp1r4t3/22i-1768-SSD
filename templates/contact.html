@@ -1,0 +1,10 @@
+<!doctype html>
+<title>Contact</title>
+<h1>Contact</h1>
+<form method="POST">
+  {{ form.hidden_tag() }}
+  <p>{{ form.name.label }}<br>{{ form.name(size=40) }}</p>
+  <p>{{ form.email.label }}<br>{{ form.email(size=40) }}</p>
+  <p>{{ form.message.label }}<br>{{ form.message(rows=6, cols=60) }}</p>
+  <p>{{ form.submit() }}</p>
+</form>

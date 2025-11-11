@@ -1,0 +1,11 @@
+<!doctype html>
+<title>Register</title>
+<h1>Register</h1>
+<form method="POST">
+  {{ form.hidden_tag() }}
+  <p>{{ form.full_name.label }}<br>{{ form.full_name(size=40) }}</p>
+  <p>{{ form.email.label }}<br>{{ form.email(size=40) }}</p>
+  <p>{{ form.password.label }}<br>{{ form.password(size=40) }}</p>
+  <p>{{ form.confirm.label }}<br>{{ form.confirm(size=40) }}</p>
+  <p>{{ form.submit() }}</p>
+</form>
